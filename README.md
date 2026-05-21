@@ -96,6 +96,21 @@ cd "d:\project\Logistix Dashboard"
 docker compose up --build -d
 ```
 
+## Deploy on Render
+This repository includes a Render Blueprint file: `render.yaml`.
+
+1. Open the Render Blueprint deploy URL:
+  `https://render.com/deploy?repo=https://github.com/jems0906/Logistix-Dashboard`
+2. Review services created from `render.yaml`:
+  - `logistix-postgres` (managed PostgreSQL)
+  - `logistix-dashboard` (Python web service)
+3. Click **Apply** in Render.
+4. When deployment completes, open the Render web service URL.
+
+Render start flow is defined in `scripts/start_render.sh` and will:
+- run ETL (`python run_etl.py`) to seed sample data
+- start Streamlit on Render's `PORT`
+
 Open the dashboard at `http://localhost:8501`.
 
 Stop the stack:

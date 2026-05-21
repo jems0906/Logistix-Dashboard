@@ -4,7 +4,13 @@ from sqlalchemy.engine import Engine
 
 
 def get_database_url() -> str:
-    return os.getenv("DATABASE_URL", "sqlite:///warehouse.db")
+    url = os.getenv("DATABASE_URL", "sqlite:///warehouse.db")
+
+    # Render often provides postgres:// URLs; SQLAlchemy expects postgresql+psycopg2://
+    if url.startswith("postgres://"):
+        return url.replace("postgres://", "postgresql+psycopg2://", 1)
+
+    return url
 
 
 def get_engine() -> Engine:
