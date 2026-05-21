@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f4f7fb" />
+  <rect x="24" y="24" width="1232" height="72" rx="12" fill="#0b2e4f" />
+  <text x="48" y="68" font-family="Segoe UI, Arial, sans-serif" font-size="30" fill="#ffffff">Logistix Operations Dashboard (Sample)</text>
+
+  <rect x="24" y="116" width="1232" height="120" rx="12" fill="#ffffff" stroke="#d6deea" />
+  <rect x="44" y="136" width="286" height="80" rx="10" fill="#e9f2fb" />
+  <rect x="350" y="136" width="286" height="80" rx="10" fill="#eaf7f0" />
+  <rect x="656" y="136" width="286" height="80" rx="10" fill="#fff4e5" />
+  <rect x="962" y="136" width="274" height="80" rx="10" fill="#fdecec" />
+  <text x="64" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#1d3557">On-time delivery: 75.0%</text>
+  <text x="370" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#1d3557">Avg cycle: 95.7 hrs</text>
+  <text x="676" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#1d3557">Inventory accuracy: 96.8%</text>
+  <text x="982" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#1d3557">Open orders: 6</text>
+
+  <rect x="24" y="256" width="606" height="210" rx="12" fill="#ffffff" stroke="#d6deea" />
+  <rect x="650" y="256" width="606" height="210" rx="12" fill="#ffffff" stroke="#d6deea" />
+  <text x="44" y="292" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#1d3557">Orders by Day</text>
+  <text x="670" y="292" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#1d3557">Backlog Trend</text>
+  <polyline points="54,430 124,398 194,420 264,376 334,360 404,332 474,310 544,280 614,300" fill="none" stroke="#2171b5" stroke-width="4" />
+  <polyline points="670,430 740,422 810,412 880,408 950,394 1020,378 1090,366 1160,350 1230,336" fill="none" stroke="#238b45" stroke-width="4" />
+
+  <rect x="24" y="486" width="1232" height="210" rx="12" fill="#ffffff" stroke="#d6deea" />
+  <text x="44" y="522" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#1d3557">Late-order Trend and Shipment Table (truncated)</text>
+  <line x1="44" y1="542" x2="1236" y2="542" stroke="#d6deea" stroke-width="2" />
+  <line x1="44" y1="578" x2="1236" y2="578" stroke="#edf1f7" stroke-width="2" />
+  <line x1="44" y1="614" x2="1236" y2="614" stroke="#edf1f7" stroke-width="2" />
+  <line x1="44" y1="650" x2="1236" y2="650" stroke="#edf1f7" stroke-width="2" />
+  <text x="54" y="568" font-family="Consolas, monospace" font-size="14" fill="#4a5568">SO-10023 | WH-DAL | Northwind Stores | delivered | promised 2026-05-16 | delivered 2026-05-17 (late)</text>
+  <text x="54" y="604" font-family="Consolas, monospace" font-size="14" fill="#4a5568">SO-10025 | WH-SEA | Acme Retail      | in_transit | promised 2026-05-18 | delivered null</text>
+</svg>

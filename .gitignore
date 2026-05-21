@@ -1,0 +1,21 @@
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Local runtime databases
+*.db
+
+# Generated report artifacts
+reports/generated/
+
+# Logs
+*.log
+scripts/*.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

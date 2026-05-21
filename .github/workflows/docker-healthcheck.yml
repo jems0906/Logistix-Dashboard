@@ -1,0 +1,35 @@
+name: Docker Stack Health Check
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Start stack
+        run: docker compose up --build -d
+
+      - name: Wait for dashboard health
+        shell: pwsh
+        run: ./scripts/check_health.ps1 -Url "http://localhost:8501" -MaxAttempts 40 -SleepSeconds 2
+
+      - name: Show service status
+        if: always()
+        run: docker compose ps
+
+      - name: Show dashboard logs
+        if: always()
+        run: docker compose logs --tail=120 dashboard
+
+      - name: Teardown
+        if: always()
+        run: docker compose down -v
