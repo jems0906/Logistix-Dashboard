@@ -3,7 +3,6 @@ services:
     name: logistix-postgres
     env: postgres
     plan: free
-    postgresMajorVersion: "16"
     ipAllowList: []
 
   - type: web
