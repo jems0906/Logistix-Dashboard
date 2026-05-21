@@ -1,9 +1,10 @@
-services:
-  - type: pserv
-    name: logistix-postgres
-    env: postgres
+databases:
+  - name: logistix-postgres
     plan: free
-    ipAllowList: []
+    databaseName: logistix
+    user: postgres
+
+services:
 
   - type: web
     name: logistix-dashboard
