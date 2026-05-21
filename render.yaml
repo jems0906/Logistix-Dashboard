@@ -2,7 +2,7 @@ databases:
   - name: logistix-postgres
     plan: free
     databaseName: logistix
-    user: postgres
+    user: logistix_user
 
 services:
 
